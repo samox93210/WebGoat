@@ -57,7 +57,7 @@ public class Assignment5 extends AssignmentEndpoint {
     try (var connection = dataSource.getConnection()) {
       PreparedStatement statement =
           connection.prepareStatement(
-              "select password from challenge_users where userid = '"
+              "select password from challenge_users where userid = '"    // Hello User !
                   + username_login
                   + "' and password = '"
                   + password_login
